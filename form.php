@@ -7,8 +7,7 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="">
-        <input type="hidden" name="">
+    <form method="post" id="form">
         <div>
             <label for="">Name :</label>
             <input type="text" id="name">
@@ -22,15 +21,24 @@
             <input type="text" id="website">
         </div>
         <div>
+            <label for="">Mobile no. :</label>
+            <input type="number" id="mobile">
+        </div>
+        <div>
+            <label for="">Gender :</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+        <div>
             <label for="">Comment :</label>
             <textarea name="" id="comment" cols="30" rows="10"></textarea>
         </div>
         <div>
-            <label for="">Gender :</label>
-            <input type="radio" name="gender" id="">Male
-            <input type="radio" name="gender" id="">Female
+        <button type="button" id="submit_btn" onclick="submitForm();">Submit</button>
         </div>
-
     </form>
 </body>
+<?php
+require "./script.php";
+?>
 </html>
