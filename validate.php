@@ -1,7 +1,7 @@
 <?php
-// require './db_connect.php';
+require './db_connect.php';
 
-// global $conn;
+global $conn;
 
 $name=$_POST["name"];
 $email=$_POST["email"];
@@ -11,5 +11,6 @@ $gender=$_POST["gender"];
 $comment=$_POST["comment"];
 
 // echo($name + " " +$email+ " "+$website+ " "+$mobile+ " "+ $gender + " "+$comment);
-echo($gender);
+// echo($gender);
+
 ?>
