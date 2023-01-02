@@ -10,7 +10,7 @@
                 email : $("#email").val(),
                 website : $("#website").val(),
                 mobile : $("#mobile").val(),
-                gender:$("input[name=gender]:checked").val(),
+                gender: $("input[name=gender]:checked").val(),
                 comment : $("#comment").val()
             };
             // alert(name);
