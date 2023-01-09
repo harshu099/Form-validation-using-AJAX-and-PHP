@@ -4,7 +4,6 @@
 <script>
     function submitForm() {
         $(document).ready(function() {
-            // alert("hello");
             var data={
                 name : $("#name").val(),
                 email : $("#email").val(),
@@ -13,7 +12,6 @@
                 gender: $("input[name=gender]:checked").val(),
                 comment : $("#comment").val()
             };
-            // alert(name);
             $.ajax({
                 url:"validate.php",
                 type: "post",
