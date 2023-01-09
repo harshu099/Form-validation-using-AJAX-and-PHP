@@ -3,6 +3,11 @@ require './dbconnect.php';
 
 global $conn;
 
+if(empty($_POST["gender"])){
+    echo ("Fill all the fields");
+    exit;
+}
+
 $name = $_POST["name"];
 $email = $_POST["email"];
 $website = $_POST["website"];
@@ -10,8 +15,9 @@ $mobile = $_POST["mobile"];
 $gender = $_POST["gender"];
 $comment = $_POST["comment"];
 
-$numlength = (int)(log($mobile+1, 10)+1);
-// echo($numlength);
+if(!empty($mobile)){
+    $numlength = (int)(log($mobile+1, 10)+1);
+}
 
 if ($name == "" || $email == "" || $website == "" || $mobile == "" || empty($gender) || $comment == "") {
     echo ("Fill all the fields");

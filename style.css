@@ -1,0 +1,42 @@
+body {
+    background-image:    url(bg1.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    /* background-position: center center;*/
+}
+#heading{
+    background-color: #f5bd3b;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 12px;
+}
+#form{
+    background-color: #f5aea9;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    width: 27%;
+}
+#form > div{
+    display: block;
+    margin: auto;
+    width: 52%;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+button{
+    background-color: #7fc9a4;
+    border-radius: 12px;
+    padding: 5px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #7ca4d9;
+    color: white;
+    cursor: pointer;
+}
